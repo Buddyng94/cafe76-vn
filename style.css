@@ -24,14 +24,14 @@ p{
     margin: 0px;
 }
 
-footer {     
+footer {
     padding: 20px;
     text-align: center;
     font-size: 20px;
 }
 
 a {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
     text-decoration: none;
     color:#6B5036;
     font-size: 24px;
@@ -68,7 +68,7 @@ a {
 /* START NAV*/
 
 ul{
-    font-family: 'Roboto Consended', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     list-style-type: none ;
     margin: 0px;
     padding: 0px;
@@ -194,7 +194,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     flex:1;
-    gap:30px;
+    gap: 50px;
     justify-content: center;
 }
 
@@ -207,8 +207,89 @@ ul{
     padding-top: 0; 
 }
 
-.About-img:hover, .blog-post:hover{
+.About-img:hover, .blog-post:hover, .Contact-right:hover{
     transform: scale(1.05);
     transition: all ease;
-    box-shadow: 0 0 15px #6B5036;
+    box-shadow: 0 0 10px #6B5036;
 }
+
+/* START Contact */
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #ffffe0;
+}
+
+.Contact-container {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.Contact-left {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+}
+
+.Contact-left p, .Contact-right p {
+    margin: 0px;
+}
+
+.Contact-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #6B5036;
+    background-color: #DDDB8E;
+}
+
+.Contact-right a {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* START Info pages*/
+
+.Info {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.Info-container {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    gap: 30px;
+}
+
+.Info-container ul {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.Info-container h1 {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.Info-right {
+    margin-left: 10px;
+}
+
