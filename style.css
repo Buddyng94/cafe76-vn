@@ -139,7 +139,7 @@ ul{
 }
 
 .Intro-right img {
-    height: max-content;
+    object-fit: cover;
 }
 
 .Intro-right, .Intro-left, .Intro-right img{
