@@ -138,8 +138,8 @@ ul{
     justify-content: center;
 }
 
-.Intro-right img {    
-    height: fit-content;
+.Intro-right img {
+    height: max-content;
 }
 
 .Intro-right, .Intro-left, .Intro-right img{
