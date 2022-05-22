@@ -2,73 +2,15 @@
 <html lang="en"> 
     <head>
         <meta charset="UTF-8">
-        <title>ViDa - Bắc Phoi Hoàng Ngọc Phách</title>
-        <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <title>Rock Paper Scissors</title>
+        
+        <script src="../java.js" defer></script>
     </head>
-
     <body>
-        <p></p>
-        <script>
-            let playerScore = 0;
-            let computerScore = 0;
-            let computerSelection;
-            let playerSelection;
-
-            function computerPlay() {
-                let computerRandom = Math.floor(Math.random()*3);
-                switch (computerRandom) {
-                case 0:
-                    return 'rock'
-                case 1:
-                    return 'paper'
-                case 2:
-                    return 'scissors'
-                }
-            }
-
-            function userInput() {
-                let playerSelection = prompt('rock,paper,scissor?','rock')
-                if ( (playerSelection.toLowerCase() === 'rock') || (userInput.toLowerCase() === 'paper') || (userInput.toLowerCase() === 'scissors') ) {
-                console.log(playRound(playerSelection,computerSelection));
-                } else {
-                alert('Invalid Choice!');
-                userInput();
-                }
-            }
-
-            function playRound(playerSelection,computerSelection) {
-                computerSelection = computerPlay();
-                if ( (playerSelection === 'rock' && computerSelection === 'scissors') || (playerSelection === 'paper' && computerSelection === 'rock') || (playerSelection === 'scissors' && computerSelection === 'paper') ) {
-                playerScore++;
-                alert('Player Win!');
-                return 'Player Win!\nScore: ' + playerScore + ' - ' + computerScore;
-                } else if ( (computerSelection === 'rock' && playerSelection === 'scissors') || (computerSelection === 'paper' && playerSelection === 'rock') || (playerSelection === 'scissors' && computerSelection === 'paper') ) {
-                computerScore++;
-                alert('Computer Win!');
-                return 'Computer Win!\nScore: ' + playerScore + ' - ' + computerScore;
-                } else if (playerSelection === computerSelection) {
-                alert('Game Tie');
-                return ('Game Tie!\nScore: ' + playerScore + ' - ' + computerScore);
-                } else {
-                console.log('Wrong Input');
-                }
-            }
-            
-            function game() {
-                for (let i = 0; playerScore < 5 && computerScore < 5; i ++) {
-                userInput();        
-                }
-                console.log('Final score: ' + playerScore + ' - ' + computerScore);
-                if ( playerScore == computerScore ) {
-                console.log('Game Tie!');
-                } else if ( playerScore > computerScore ) {
-                console.log('Player Win!');
-                } else {
-                console.log('Computer Win!');
-                }
-            }
-
-            game();
-        </script>          
+        <div id="container">
+            <button id="1">Click Me</button>
+            <button id="2">Click Me</button>
+            <button id="3">Click Me</button>
+        </div>
     </body>
 </html>
