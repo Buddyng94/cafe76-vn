@@ -3,14 +3,64 @@
     <head>
         <meta charset="UTF-8">
         <title>Rock Paper Scissors</title>
-        
-        <script src="../java.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <script src="../.js" defer></script>
     </head>
     <body>
-        <div id="container">
-            <button id="1">Click Me</button>
-            <button id="2">Click Me</button>
-            <button id="3">Click Me</button>
+        <div class="nav">
+            <div class="nav-container">
+                <a href="../index.html"><h1>CAFE76.VN</h1></a>
+                <ul>
+                    <li><a href="/pages/Rock-Paper-Scissors.html">Game</a></li>
+                    <li><a href="../index.html#Blog">Blog</a></li>
+                    <li><a href="../index.html#About">About us</a></li>
+                    <li><a href="../index.html#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="RPS">            
+            <div class="RPS-container">
+                <div class="RPS-item">
+                    <h1>OẲN TÙ TÌ</h1>
+                    <p>Vida gáy rằng xưa nay solo oẳn tù tì chưa bao giờ thua, tôi solo thử vài ván thì thấy đúng, cay thật đấy! Pạn chứng minh ló sai đi pạn!!</p>
+
+                    <p>Luật vẫn thế! Ai đến 5 trước thì win, thế thui. Nhưng anh chị em chơi cẩn thận nhé, chúa lươn Hoàng Ngọc Phách đấy!</p>
+                </div>
+                <div class="RPS-item">
+                    <img id="computerImage" src="../images/ViDa-Avatar.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="RPS">
+            <div class="RPS-container">
+                <p id="scoreMes">Pạn nhớ là cứ bình tĩnh mà xiên ló!</p>
+            </div>
+            <div class="RPS-container" id="scoreBoard">
+                <div class="RPS-item">
+                    <div class="sign" id="playerSign">❔</div>
+                    <p id="playerScore">Pạn: 0</p>
+                </div>
+                <div class="RPS-item">
+                    <div class="sign" id="computerSign">❔</div>
+                    <p id="computerScore">Vida: 0</p>
+                </div>
+            </div>
+
+        
+
+            <div class="RPS-container">
+                <button class="btn" id="rockBtn">
+                <div class="sign">✊</div>
+                </button>
+                <button class="btn" id="paperBtn">
+                <div class="sign">✋</div>
+                </button>
+                <button class="btn" id="scissorsBtn">
+                <div class="sign">✌</div>
+                </button>
+            </div>
         </div>
     </body>
 </html>

@@ -1,4 +1,3 @@
-
 let playerScore = 0;
 let computerScore = 0;
 let computerSelection;
@@ -59,3 +58,4 @@ function game() {
 }
 
 game();
+

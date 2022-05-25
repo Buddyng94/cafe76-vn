@@ -37,10 +37,6 @@ a {
     font-size: 24px;
 }
 
-/* {
-    border: 1px solid rgb(255, 0, 0);    
-}
-
 /* START top EXPLAINATION */
 
 .top-container {
@@ -117,9 +113,6 @@ ul{
     background-color: #fff;
     text-align: justify;
     padding: 30px;
-}
-
-.Intro-left{
 }
 
 .Intro-left h2, p{
@@ -267,7 +260,7 @@ ul{
 .Info-container {
     display: flex;
     justify-content: center;
-    width: 90vw;
+    width: 80vw;
     gap: 30px;
 }
 
@@ -293,3 +286,68 @@ ul{
     margin-left: 10px;
 }
 
+/** RPS **/
+.RPS {
+    margin-bottom: 20px;
+}
+
+.RPS-container {        
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.RPS-item {
+    max-width: 40vw;    
+}
+
+.RPS-item h1,h2,h3,h4,h5 {
+    text-align: center;
+}
+
+.RPS-item p {
+    line-height: 30px;
+}
+
+#scoreMes, #playerScore, #computerScore {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.RPS-container img {
+    max-width: 20vw;
+    max-height: 100%;
+}
+
+.RPS-container#scoreBoard {
+    gap: 100px;
+}
+
+.btn {
+    margin-top: 20px;
+    border: 0px;
+    width: 170px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #6B5036;
+}
+
+.sign {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #97734c;
+    border: 5px solid #6B5036;
+}
+
+.btn:active {
+    background-color: #a88054;
+}
+
+/* {
+    border: 1px solid rgb(255, 0, 0);    
+}
