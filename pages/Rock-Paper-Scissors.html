@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Rock Paper Scissors</title>
         <link rel="stylesheet" type="text/css" href="../style.css"/>
-        <script src="../.js" defer></script>
+        <script src="../script.js" defer></script>
     </head>
     <body>
         <div class="nav">
@@ -21,7 +21,7 @@
 
         <div class="RPS">            
             <div class="RPS-container">
-                <div class="RPS-item">
+                <div class="RPS-item" id="rps-intro">
                     <h1>OẲN TÙ TÌ</h1>
                     <p>Vida gáy rằng xưa nay solo oẳn tù tì chưa bao giờ thua, tôi solo thử vài ván thì thấy đúng, cay thật đấy! Pạn chứng minh ló sai đi pạn!!</p>
 
@@ -40,15 +40,13 @@
             <div class="RPS-container" id="scoreBoard">
                 <div class="RPS-item">
                     <div class="sign" id="playerSign">❔</div>
-                    <p id="playerScore">Pạn: 0</p>
+                    <p id="playerScoreMes">Pạn: 0</p>
                 </div>
                 <div class="RPS-item">
                     <div class="sign" id="computerSign">❔</div>
-                    <p id="computerScore">Vida: 0</p>
+                    <p id="computerScoreMes">Vida: 0</p>
                 </div>
             </div>
-
-        
 
             <div class="RPS-container">
                 <button class="btn" id="rockBtn">
@@ -61,6 +59,28 @@
                 <div class="sign">✌</div>
                 </button>
             </div>
-        </div>
+        </div>        
     </body>
+
+    <div class="RPS-container endgame" id="computerWin">
+        <div class="RPS-item endgame">
+            <p>Ôi xời gà thế này mà cũng đòi thách đấu!<br>Về luyện thêm mười năm nữa đi pạn nhé!</p>                       
+            <video width="480px">
+                <source src="../images/bomman-de-vai-loz.mp4">
+            </video>
+            <button class="btn">
+                LÀM LẠI?
+            </button>
+        </div>
+    </div>
+
+    <div class="RPS-container endgame" id="playerWin">
+        <div class="RPS-item endgame">
+            <p>Ô khê ô khê đỉnh đấy pạn ơi!</p>
+            <img src="../images/Bomman-cry.gif" width="480px">
+            <button class="btn">
+                LÀM LẠI?
+            </button>
+        </div>
+    </div>
 </html>
